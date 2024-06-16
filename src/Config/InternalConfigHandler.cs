@@ -10,7 +10,7 @@ namespace UnityExplorer.Config
 
         public override void Init()
         {
-            CONFIG_PATH = Path.Combine("/storage/emulated/0/UnityExplorer/data.cfg");
+            CONFIG_PATH = "/storage/emulated/0/UnityExplorer/data.cfg"
         }
 
         public override void LoadConfig()

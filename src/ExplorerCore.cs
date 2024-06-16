@@ -25,7 +25,7 @@ namespace UnityExplorer
         public const string GUID = "com.originalnicodr.cinematicunityexplorer";
 
         public static IExplorerLoader Loader { get; private set; }
-        public static string ExplorerFolder => Path.Combine("/storage/emulated/0/UnityExplorer");
+        public static string ExplorerFolder = "/storage/emulated/0/UnityExplorer";
         public const string DEFAULT_EXPLORER_FOLDER_NAME = "CinematicUnityExplorer";
 
         public static HarmonyLib.Harmony Harmony { get; } = new HarmonyLib.Harmony(GUID);

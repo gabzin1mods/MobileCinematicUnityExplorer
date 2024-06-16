@@ -25,7 +25,7 @@ namespace UnityExplorer.CSConsole
         public static CSConsolePanel Panel => UIManager.GetPanel<CSConsolePanel>(UIManager.Panels.CSConsole);
         public static InputFieldRef Input => Panel.Input;
 
-        public static string ScriptsFolder => Path.Combine("/storage/emulated/0/UnityExplorer/Scripts");
+        public static string ScriptsFolder = "/storage/emulated/0/UnityExplorer/Scripts";
 
         static HashSet<string> usingDirectives;
         static StringBuilder evaluatorOutput;

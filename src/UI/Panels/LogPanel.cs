@@ -59,7 +59,7 @@ namespace UnityExplorer.UI.Panels
         {
             string fileName = $"UnityExplorer {DateTime.Now:u}.txt";
             fileName = IOUtility.EnsureValidFilename(fileName);
-            string path = Path.Combine("/storage/emulated/0/UnityExplorer/Logs");
+            string path = "/storage/emulated/0/UnityExplorer/Logs";
             CurrentStreamPath = IOUtility.EnsureValidFilePath(Path.Combine(path, fileName));
 
             // clean old log(s)
