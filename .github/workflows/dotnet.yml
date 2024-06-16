@@ -27,6 +27,11 @@ jobs:
       - name: Build UE
         run: ./build.ps1
 
+      - name: Upload Standalone.Mono
+        uses: actions/upload-artifact@v3
+        with:
+          name: CinematicUnityExplorer.Standalone.Mono.zip
+          path: ./Release/CinematicUnityExplorer.Standalone.Mono/
 
       - name: Upload Editor
         uses: actions/upload-artifact@v3
