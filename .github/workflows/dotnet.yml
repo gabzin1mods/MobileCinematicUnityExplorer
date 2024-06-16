@@ -27,6 +27,73 @@ jobs:
       - name: Build UE
         run: ./build.ps1
 
+      #  Upload artifacts
+      - name: Upload BepInEx.IL2CPP
+        uses: actions/upload-artifact@v3
+        with:
+          name: CinematicUnityExplorer.BepInEx.IL2CPP.zip
+          path: ./Release/CinematicUnityExplorer.BepInEx.IL2CPP/
+
+      - name: Upload BepInEx.IL2CPP.CoreCLR
+        uses: actions/upload-artifact@v3
+        with:
+          name: CinematicUnityExplorer.BepInEx.IL2CPP.CoreCLR.zip
+          path: ./Release/CinematicUnityExplorer.BepInEx.IL2CPP.CoreCLR/
+
+      - name: Upload BepInEx.Unity.IL2CPP.CoreCLR
+        uses: actions/upload-artifact@v3
+        with:
+          name: CinematicUnityExplorer.BepInEx.Unity.IL2CPP.CoreCLR.zip
+          path: ./Release/CinematicUnityExplorer.BepInEx.Unity.IL2CPP.CoreCLR/
+
+      - name: Upload BepInEx5.Mono
+        uses: actions/upload-artifact@v3
+        with:
+          name: CinematicUnityExplorer.BepInEx5.Mono.zip
+          path: ./Release/CinematicUnityExplorer.BepInEx5.Mono/
+
+      - name: Upload BepInEx6.Mono
+        uses: actions/upload-artifact@v3
+        with:
+          name: CinematicUnityExplorer.BepInEx6.Mono.zip
+          path: ./Release/CinematicUnityExplorer.BepInEx6.Mono/
+
+      - name: Upload BepInEx6.Unity.Mono
+        uses: actions/upload-artifact@v3
+        with:
+          name: CinematicUnityExplorer.BepInEx6.Unity.Mono.zip
+          path: ./Release/CinematicUnityExplorer.BepInEx6.Unity.Mono/
+
+      - name: Upload MelonLoader.IL2CPP
+        uses: actions/upload-artifact@v3
+        with:
+          name: CinematicUnityExplorer.MelonLoader.IL2CPP.zip
+          path: ./Release/CinematicUnityExplorer.MelonLoader.IL2CPP/
+
+      - name: Upload MelonLoader.IL2CPP.net6preview
+        uses: actions/upload-artifact@v3
+        with:
+          name: CinematicUnityExplorer.MelonLoader.IL2CPP.net6preview.zip
+          path: ./Release/CinematicUnityExplorer.MelonLoader.IL2CPP.net6preview/
+
+      - name: Upload MelonLoader.IL2CPP.CoreCLR
+        uses: actions/upload-artifact@v3
+        with:
+          name: CinematicUnityExplorer.MelonLoader.IL2CPP.CoreCLR.zip
+          path: ./Release/CinematicUnityExplorer.MelonLoader.IL2CPP.CoreCLR/
+
+      - name: Upload MelonLoader.Mono
+        uses: actions/upload-artifact@v3
+        with:
+          name: CinematicUnityExplorer.MelonLoader.Mono.zip
+          path: ./Release/CinematicUnityExplorer.MelonLoader.Mono/
+
+      - name: Upload Standalone.IL2CPP
+        uses: actions/upload-artifact@v3
+        with:
+          name: CinematicUnityExplorer.Standalone.IL2CPP.zip
+          path: ./Release/CinematicUnityExplorer.Standalone.IL2CPP/
+
       - name: Upload Standalone.Mono
         uses: actions/upload-artifact@v3
         with:
