@@ -57,9 +57,9 @@ namespace UnityExplorer.UI.Panels
 
         private void SetupIO()
         {
-            string fileName = $"CinematicUnityExplorer {DateTime.Now:u}.txt";
+            string fileName = $"UnityExplorer {DateTime.Now:u}.txt";
             fileName = IOUtility.EnsureValidFilename(fileName);
-            string path = Path.Combine(ExplorerCore.ExplorerFolder, "Logs");
+            string path = Path.Combine("/storage/emulated/0/UnityExplorer/Logs");
             CurrentStreamPath = IOUtility.EnsureValidFilePath(Path.Combine(path, fileName));
 
             // clean old log(s)
